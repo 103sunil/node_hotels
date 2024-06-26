@@ -10,11 +10,11 @@ const personSchema = new mongoose.Schema({
         type: Number,
         required:true
     },
-    // work : {
-    //     type: String,
-    //     enum:['chef','waiter','manager'],
-    //     required: true
-    // },
+    work : {
+        type: String,
+        enum:['chef','waiter','manager'],
+        required: true
+    },
     mobile: {
         type: String,
         required:true
@@ -27,6 +27,6 @@ const personSchema = new mongoose.Schema({
 
 });
 
-// create person model
+// create person modeldfafd
 const Person = mongoose.model('Person',personSchema);
 module.exports = Person;
